@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>eBudzik.pl</title>
+	<link rel="shortcut icon" type="image/x-icon" href="ico/alarm-clock.ico" /> 
+  <link rel="stylesheet" type="text/css" href="css/look.css">
+  <script type="text/javascript" src="js/behavior.js"></script>
+  <script type="text/javascript" src="js/analytics.js"></script>
+  <script src="http://app.sugester.pl/ebudzik/widget.js?1327355649" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pl_PL/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <div id="top">
+
+    <div id="clock" class="clock unselectable">
+      <div class="clock_alarm">&nbsp;0:00</div>
+      <div class="clock_time">&nbsp;0:00:00</div>
+      <div class="clock_progress"></div>
+    </div>
+
+    <div id="navigation">
+    
+      <button id="hours_less" class="incdec_button">-</button>
+      <select id="hours_select" class="select">
+        <option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option>20</option><option>21</option><option>22</option><option>23</option>
+      </select>
+      <button id="hours_more" class="incdec_button">+</button>
+      &nbsp;
+      <button id="minutes_less" class="incdec_button">-</button>
+      
+      <select id="minutes_select" class="select">
+        <option>0</option><option>5</option><option>10</option><option>15</option><option>20</option><option>25</option><option>30</option><option>35</option><option>40</option><option>45</option><option>50</option><option>55</option>
+      </select>
+      <button id="minutes_more" class="incdec_button">+</button>
+
+      <!--br/>
+      <button id="sound_test">testuj</button>
+      <select id="alarm_sound">
+        <option>klasyczny</option>
+        <option>klakson</option>
+        <option>telefon</option>
+      </select> dzwiek budzika
+
+      <br/-->
+      <button id="start_clock">
+        nastaw budzik
+      </button>
+
+      <br class="clear"/>
+
+      <button id="lights_switch" class="hide"><u>l</u>ights switch</button>
+      <button id="help_switch" class="hide"><u>h</u>elp switch</button>
+    </div>    
+
+  </div>
+
+  <a id="donation" class="hide" href="donation.html">
+    <img src="img/paypal-curved.png" alt="donation" />
+  </a>  
+
+  <div id="help">
+    <div class="help_bg hide">
+      <img src="img/keyboard.png" alt="keyboard" />
+      <pre class="hide">
+<b>Keys:</b>
+
+h - this help window
+l - lights on/off
+[spacebar], [enter]
+  - turn on/off alarm clock
+- - decrease hours
++ - increase hours
+[ - decrease minutes
+] - increase minutes
+      </pre>
+      <pre>
+<b>Klawisze:</b>
+
+[spacja], [enter]
+  - włącz/wyłącz budzik
+h - okno pomocy
+l - włącz/wyłącz światło
+- - zmniejsz godzinę
++ - zwiększ godzinę
+[ - zmniejsz minutę
+] - zwiększ minutę
+      </pre>
+    </div>
+    <div class="help_switch active"></div>
+  </div>
+
+  <div id="switches">
+    <!--div class="donation"></div-->
+  </div>
+
+  <div id="lights">
+    <div class="lights_bg hide"></div>
+    <div class="lights_switch lights_switch_active"></div>
+  </div>
+  
+</body>
+
+</html>
